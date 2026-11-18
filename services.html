@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu and services at Fasanya Joshua's Kitchen.">
+  <title>Fasanya Joshua's Kitchen | Menu &amp; Services</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Fasanya Joshua's <span>Kitchen</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Menu &amp; Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner"><div class="container"><h1>Menu &amp; Services</h1><p>Freshly cooked Nigerian favourites.</p></div></section>
+
+    <section class="section container">
+      <h2 class="section-title">Our signature dishes</h2>
+
+      <div class="filters" role="group" aria-label="Filter dishes">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rice">Rice</button>
+        <button class="filter-btn" data-filter="soup">Soups</button>
+        <button class="filter-btn" data-filter="grill">Grill</button>
+      </div>
+
+      <div class="grid-3" id="menuGrid">
+        <article class="card dish" data-category="rice">
+          <img src="images/jollof.svg" alt="Plate of party jollof rice">
+          <h3>Party Jollof Rice</h3>
+          <p>Smoky, spicy jollof served with fried plantain and chicken.</p>
+          <p class="price">&#8358;3,500</p>
+        </article>
+        <article class="card dish" data-category="soup">
+          <img src="images/soup.svg" alt="Bowl of egusi soup">
+          <h3>Egusi Soup &amp; Pounded Yam</h3>
+          <p>Rich melon-seed soup with assorted meat and fresh pounded yam.</p>
+          <p class="price">&#8358;4,500</p>
+        </article>
+        <article class="card dish" data-category="grill">
+          <img src="images/grill.svg" alt="Grilled fish with peppers">
+          <h3>Grilled Fish &amp; Peppers</h3>
+          <p>Whole tilapia grilled with pepper sauce and onions.</p>
+          <p class="price">&#8358;5,000</p>
+        </article>
+        <article class="card dish" data-category="rice">
+          <img src="images/jollof.svg" alt="Fried rice with vegetables">
+          <h3>Nigerian Fried Rice</h3>
+          <p>Colourful fried rice with vegetables, liver and shrimp.</p>
+          <p class="price">&#8358;3,800</p>
+        </article>
+        <article class="card dish" data-category="soup">
+          <img src="images/soup.svg" alt="Bowl of ogbono soup">
+          <h3>Ogbono Soup &amp; Eba</h3>
+          <p>Thick, draw-style ogbono soup served with golden eba.</p>
+          <p class="price">&#8358;4,200</p>
+        </article>
+        <article class="card dish" data-category="grill">
+          <img src="images/grill.svg" alt="Suya skewers">
+          <h3>Chicken Suya</h3>
+          <p>Spicy yaji-rubbed chicken skewers grilled over charcoal.</p>
+          <p class="price">&#8358;3,000</p>
+        </article>
+      </div>
+      <p id="noResults" class="center-text" hidden>No dishes found in this category.</p>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Our services</h2>
+        <div class="services-flex">
+          <div class="service"><h3>Dine-in</h3><p>Enjoy a relaxed meal in our family-friendly dining area.</p></div>
+          <div class="service"><h3>Delivery</h3><p>Hot food delivered to your home or office across Lagos.</p></div>
+          <div class="service"><h3>Catering</h3><p>Custom menus for weddings, birthdays and corporate events.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Fasanya Joshua's Kitchen. Sample project for educational use.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
